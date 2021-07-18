@@ -9,5 +9,5 @@ pd.options.display.max_columns = None
 pd.options.display.max_rows = None
 pd.set_option('display.max_colwidth', None)
 
-#GROUP BY number furnished/ Unfurnished
-print(data.groupby('bedroom').id.count())
+#GROUP BY number of bedroom
+print(data.groupby('bedroom').id.count()
