@@ -1,4 +1,4 @@
-# # import the necessary library
+# import the necessary library
 import pandas as pd
 import numpy as np
 import re
@@ -30,6 +30,14 @@ lessthan4beds=data[data["bedroom"]<4]
 morethan4beds=data[data["bedroom"]>4]
 print(morethan4beds)
 
+#GROUP BY number furnished/ Unfurnished
+df.groupby('furnish').furnish.count()
+data = pd.read_csv("daft_v_2.csv")
+df = pd.DataFrame(data, columns= ['furnish','property type',])
+print(df)
+
+
+
 
 
 # convert the string in "price" col to integer.
@@ -57,3 +65,4 @@ plt.xlim((0, 15000))  # set the x limited value.
 plt.xlabel("monthly rental")
 plt.ylabel("count")
 plt.title("Monthly Rental Histogram")
+plt.show()
