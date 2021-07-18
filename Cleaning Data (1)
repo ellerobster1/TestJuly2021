@@ -1,0 +1,12 @@
+# import the necessary library
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+# import dataset
+data = pd.read_csv("daft_v_2.csv", index_col = 0)
+
+#To change the Width of the columns/ column headings to get rid of dots
+pd.options.display.max_columns= None
+pd.options.display.max_rows= None
+pd.set_option ('Display.max.colwidth', None)
