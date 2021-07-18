@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 #create data for two teams
-QUANTITY = ['Q1', 'Q2', 'Q3', 'Q4']
+QUANTITY = [1869,  100 , 574, 175]
 FURNISHED = [14, 17, 12, 9]
 UNFURNISHED = [7, 15, 24, 18]
 
