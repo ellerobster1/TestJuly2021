@@ -1,0 +1,18 @@
+
+
+
+import pandas as pd
+
+import numpy as np
+
+#Fill in Blanks of Furnished Column
+data = pd.read_csv("daft_v_2.csv", index_col = 0)
+pd.options.display.max_columns = None
+pd.options.display.max_rows = None
+pd.set_option('display.max_colwidth', None)
+
+# filling null values of Furnished
+data.furnish.fillna("furnish",inplace= True)
+
+
+print(data[['furnish']])
