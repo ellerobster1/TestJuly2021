@@ -1,7 +1,7 @@
-import numpy as np
+rt numpy as np
 import matplotlib.pyplot as plt
 
-#create data for two teams
+#create data 
 QUANTITY = [1869,  100 , 574, 175]
 FURNISHED = [1723,95,423,172]
 UNFURNISHED = [140, 5, 147, 173]
@@ -18,8 +18,8 @@ p2 = plt.bar(xloc, UNFURNISHED, bottom=FURNISHED, width=barWidth)
 #add labels, title, tick marks, and legend
 plt.ylabel('TYPE')
 plt.xlabel('BREAKDOWN')
-plt.title('BREAKDOWNN OF FURNISHED')
-plt.xticks(xloc, ('Q1', 'Q2', 'Q3', 'Q4'))
+plt.title('BREAKDOWN OF FURNISHED')
+plt.xticks(xloc, ("Apartment","Flat","House","Studio"))
 plt.yticks(np.arange(0, 41, 5))
 plt.legend((p1[0], p2[0]), ('FURNISHED', 'UNFURNISHED'))
 
