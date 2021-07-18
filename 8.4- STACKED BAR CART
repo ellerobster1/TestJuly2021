@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 
 #create data for two teams
 QUANTITY = [1869,  100 , 574, 175]
-FURNISHED = [14, 17, 12, 9]
-UNFURNISHED = [7, 15, 24, 18]
+FURNISHED = [1723,95,423,172]
+UNFURNISHED = [140, 5, 147, 173]
 
 #define chart parameters
 N = 4
