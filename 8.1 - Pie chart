@@ -1,9 +1,10 @@
 import matplotlib.pyplot as plt
 
-x = [1863, 100, 570, 173]
-labels = ['Apartment ', 'Flat', 'House', 'Studio']
+x = [1869 , 100 , 574, 175 ]
+labels = ['Apartment', 'Flat', 'House', 'Studio']
+colors = ['tab:blue', 'tab:cyan', 'tab:gray', 'tab:orange', 'tab:red']
 
 fig, ax = plt.subplots()
-ax.pie(x, labels = labels)
-ax.set_title('Property types rented')
+ax.pie(x, labels = labels, colors = colors, autopct='%.0f%%')
+ax.set_title('Breakdown of Property Type rented')
 plt.show()
