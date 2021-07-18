@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 
-x = [15, 25, 25, 30, 5]
-labels = ['Houses', 'apartments', 'flat', 'Unlikely', 'Very Unlikely']
+x = [1863, 100, 570, 173]
+labels = ['Apartment ', 'Flat', 'House', 'Studio']
 
 fig, ax = plt.subplots()
 ax.pie(x, labels = labels)
