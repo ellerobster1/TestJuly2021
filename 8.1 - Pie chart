@@ -1,0 +1,9 @@
+import matplotlib.pyplot as plt
+
+x = [15, 25, 25, 30, 5]
+labels = ['Houses', 'apartments', 'flat', 'Unlikely', 'Very Unlikely']
+
+fig, ax = plt.subplots()
+ax.pie(x, labels = labels)
+ax.set_title('Property types rented')
+plt.show()
