@@ -1,0 +1,13 @@
+import pandas as pd
+
+import numpy as np
+import os
+
+
+data = pd.read_csv("daft_v_2.csv", index_col = 0)
+pd.options.display.max_columns = None
+pd.options.display.max_rows = None
+pd.set_option('display.max_colwidth', None)
+
+#GROUP BY number furnished/ Unfurnished
+print(data.groupby('property type').count())
