@@ -1,0 +1,10 @@
+data = pd.read_csv("daft_v_2.csv", index_col = 0)
+pd.options.display.max_columns = None
+pd.options.display.max_rows = None
+pd.set_option('display.max_colwidth', None)
+
+#drop the description.
+
+data=data.drop(["description"],axis=1)
+# finding total number of null values
+print(data .isnull().sum())
