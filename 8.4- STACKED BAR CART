@@ -1,0 +1,27 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+#create data for two teams
+QUANTITY = ['Q1', 'Q2', 'Q3', 'Q4']
+FURNISHED = [14, 17, 12, 9]
+UNFURNISHED = [7, 15, 24, 18]
+
+#define chart parameters
+N = 4
+barWidth = .5
+xloc = np.arange(N)
+
+#create stacked bar chart
+p1 = plt.bar(xloc, FURNISHED, width=barWidth)
+p2 = plt.bar(xloc, UNFURNISHED, bottom=FURNISHED, width=barWidth)
+
+#add labels, title, tick marks, and legend
+plt.ylabel('TYPE')
+plt.xlabel('BREAKDOWN')
+plt.title('BREAKDOWNN OF FURNISHED')
+plt.xticks(xloc, ('Q1', 'Q2', 'Q3', 'Q4'))
+plt.yticks(np.arange(0, 41, 5))
+plt.legend((p1[0], p2[0]), ('FURNISHED', 'UNFURNISHED'))
+
+#display chart
+plt.show()
