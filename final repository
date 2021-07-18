@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import re
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 # import dataset
 data = pd.read_csv("daft_v_2.csv")
@@ -31,10 +32,9 @@ morethan4beds=data[data["bedroom"]>4]
 print(morethan4beds)
 
 #GROUP BY number furnished/ Unfurnished
-df.groupby('furnish').furnish.count()
-data = pd.read_csv("daft_v_2.csv")
-df = pd.DataFrame(data, columns= ['furnish','property type',])
-print(df)
+print(df.groupby('property type').furnish.count())
+
+
 
 
 
@@ -66,3 +66,8 @@ plt.xlabel("monthly rental")
 plt.ylabel("count")
 plt.title("Monthly Rental Histogram")
 plt.show()
+
+
+
+
+
