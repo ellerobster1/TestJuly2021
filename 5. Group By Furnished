@@ -11,4 +11,4 @@ pd.options.display.max_rows = None
 pd.set_option('display.max_colwidth', None)
 
 #GROUP BY number furnished/ Unfurnished
-print(data.groupby('property type').id.count())
+print(data.groupby('property type').ID.count())
