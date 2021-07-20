@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
     addlabels(x, y)
 
 
-df = pd.DataFrame([['Furnished','Apartment',1723],['Furnished','House',423],['Furnished','Flat',95],['Furnished','Studio',172   ],
-                   ['UnFurnished','Apartment',77],['UnFurnished','House',52],['UnFurnished','Flat',4], ['UnFurnished','Studio',1],],columns=['group','column','val'])
+df = pd.DataFrame([['Bedrooms','Apartment',2735],['Bedrooms','House',1211],['Bedrooms','Flat',102],['Bedrooms','Studio',21   ],
+                   ['Bathrooms','Apartment',3399],['Bathrooms','House',1848],['Bathrooms','Flat',135], ['Bathrooms','Studio',1],],columns=['group','column','val'])
 
 df.pivot("column", "group", "val").plot(kind='bar')
 
