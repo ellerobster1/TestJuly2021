@@ -1,0 +1,22 @@
+# import the necessary library
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+import pandas as pd
+
+import numpy as np
+
+
+data = pd.read_csv("daft_v_2.csv", index_col = 0)
+pd.options.display.max_columns = None
+pd.options.display.max_rows = None
+pd.set_option('display.max_colwidth', None)
+
+#Count the missing data
+missing_values_count = data.isnull().sum()
+#Print columns missing data from 0 to 9.
+print(missing_values_count[0:9])
+
+# finding total number of null values
+print(data .isnull().sum())
