@@ -1,0 +1,15 @@
+import pandas as pd
+
+import numpy as np
+#Code here takes in a csv file and reads it.
+
+data = pd.read_csv("daft_v_2.csv", index_col = 0)
+
+#Column headings to get rid of dots
+
+pd.options.display.max_columns = None
+pd.options.display.max_rows = None
+pd.set_option('display.max_colwidth', None)
+
+
+print(data.columns)
