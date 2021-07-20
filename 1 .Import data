@@ -1,0 +1,4 @@
+# import the necessary library
+import pandas as pd
+print(pd.read_csv("daft_v_2.csv"))
+
