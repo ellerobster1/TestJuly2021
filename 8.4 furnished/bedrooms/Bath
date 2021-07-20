@@ -2,8 +2,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
- # calling the function to add value labels
-    addlabels(x, y)
+
 
 
 df = pd.DataFrame([['Bedrooms','Apartment',2735],['Bedrooms','House',1211],['Bedrooms','Flat',102],['Bedrooms','Studio',21   ],
