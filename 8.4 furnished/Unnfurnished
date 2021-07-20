@@ -2,6 +2,9 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
+ # calling the function to add value labels
+    addlabels(x, y)
+
 
 df = pd.DataFrame([['Furnished','Apartment',1723],['Furnished','House',423],['Furnished','Flat',95],['Furnished','Studio',172   ],
                    ['UnFurnished','Apartment',77],['UnFurnished','House',52],['UnFurnished','Flat',4], ['UnFurnished','Studio',1],],columns=['group','column','val'])
