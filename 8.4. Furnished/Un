@@ -1,0 +1,15 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+A = [1723,95,423,172]
+B = [63,1,95, 0]
+
+
+# pandas dataframe
+df = pd.DataFrame(data={'Furnished': A, 'Unfurnished': B})
+df.index = ['Apartment', 'House', 'Flat', 'Studio']
+
+
+ax = df.plot(kind='bar', stacked=True, figsize=(8, 6), rot=0, xlabel='Property Type', ylabel='Count')
+for c in ax.containers:
+    ax.bar_label(c, label_type='center')
